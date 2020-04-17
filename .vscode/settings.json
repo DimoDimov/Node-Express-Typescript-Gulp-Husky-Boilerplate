@@ -1,0 +1,42 @@
+{
+  "workbench.settings.editor": "json",
+  "breadcrumbs.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "debug.node.autoAttach": "off",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.tabWidth": 4,
+  "editor.tabCompletion": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.jsxSingleQuote": true,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.bracketSpacing": false,
+  "prettier.singleQuote": true,
+  "prettier.quoteProps": "consistent",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.jediEnabled": false,
+  "tslint.configFile": "tslint.json",
+  "eslint.autoFixOnSave": true,
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+  "prettier.configPath": ".prettierrc",
+  "prettier.prettierPath": "node_modules/prettier/index.js",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

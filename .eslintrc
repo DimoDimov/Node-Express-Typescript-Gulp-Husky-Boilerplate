@@ -1,0 +1,41 @@
+{
+  "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended" // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.eslint.json", "./tsconfig.json"],
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "semi": "error",
+    "@typescript-eslint/restrict-plus-operands": "error",
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      {
+        "prefixWithI": "always"
+      }
+    ],
+    "@typescript-eslint/no-var-requires": 0,
+    // note you must disable the base rule as it can report incorrect errors
+    "camelcase": "off",
+    "@typescript-eslint/camelcase": ["error", { "properties": "never" }]
+  },
+
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["@modules/*", "rest/modules/*"],
+        ["@services/*", "services/*"]
+      ]
+    }
+  }
+}
